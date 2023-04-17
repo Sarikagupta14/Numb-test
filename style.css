@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    overflow-x: hidden ;
+}
+.text{
+    font-size: 2rem;
+}
+/* input{
+    padding-top: 0.8rem;
+    padding-left: 0.2rem;
+} */
+#number{
+    border: 2px solid brown;
+    color: black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+#Showresult{
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+}

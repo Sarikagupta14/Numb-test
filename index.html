@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inkoop: Front End Development internship</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+   
+<div class="container">
+  
+  <label class="text">Enter a number :</label>
+  <input type="number" id="number" value="24" onkeyup="isCheck()">
+  <span id="Showresult"></span>
+
+</div>
+  <script>
+    function isCheck() {
+      const num = parseInt(document.getElementById('number').value);
+      if (num < 0) {
+        document.getElementById('Showresult').innerHTML = "Enter a Positive number";
+      } else if (num % 2 === 0) {
+        let evenNums = "";
+        for (let i = 1; i <= 3; i++) {
+          evenNums += `${num + i * 2}, `;
+        }
+        document.getElementById('Showresult').innerHTML = `It is an even number, and the next 3 even numbers are ${evenNums}`;
+      } else {
+        let oddNums = "";
+        for (let i = 1; i <= 3; i++) {
+          oddNums += `${num + i * 2 }, `;
+        }
+        document.getElementById('Showresult').innerHTML = `It is an odd number, and the next 3 odd numbers are ${oddNums}`;
+      }
+    }
+  </script>
+</body>
+</html>
